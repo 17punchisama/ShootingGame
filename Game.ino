@@ -153,15 +153,14 @@ void loop()
         break;
       }
     }
-  }
-
-  // ตรวจสอบเงื่อนไขเมื่อเกม Game Over
+  
+    
   if (life == 0)
   {
     lcd.fillScreen(BLACK);
     lcd.drawString(35, 75, "GAME OVER!", RED, 1);
-    delay(5000); // หน้าจอ Game Over จะแสดงเป็นเวลา 5 วินาที
-    // รีสตาร์ทเกม
+    delay(5000);
+    
     life = 5;
     score = 0;
     x = 50;
